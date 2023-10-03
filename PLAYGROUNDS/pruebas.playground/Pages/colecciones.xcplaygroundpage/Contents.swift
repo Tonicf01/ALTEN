@@ -92,7 +92,7 @@ dict["nombre"] = "Juan"
 print(dict)
 
 //acceder a un valor
-print(dict["nombre"])
+print(dict["nombre"] as Any)
 
 for key in dict{
     print (key)

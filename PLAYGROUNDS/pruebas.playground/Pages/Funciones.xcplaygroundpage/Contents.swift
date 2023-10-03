@@ -37,12 +37,12 @@ print ("la longitud de esta cadena es de \(longitud)")
 
 
 class calculadora{
- func suma(a:Int, b:Int) -> Int {
- return a + b
-}
-func suma(a:Int, b:Int, c:Int) -> Int {
-return a + b + c
-}
+    func suma(a:Int, b:Int) -> Int {
+        return a + b
+    }
+    func suma(a:Int, b:Int, c:Int) -> Int {
+        return a + b + c
+    }
 }
 var calc = calculadora()
 var resulta1 = calc.suma(a: 1, b: 2, c: 3) //llamará a la segunda funcion
@@ -56,4 +56,38 @@ print(resulta2)
 
 
 //closures
-//bloque de c
+//es una función anónima
+//bloque de código que podemos almacenar en variables
+/*
+ { (parametros) -> (tipo devuelto) in
+ Implementación
+ }
+ */
+//una función es un closure con nombre
+//se crea sobre una variable
+
+var imprimir = { () -> Void in
+    print("----")
+    print("hello")
+    print("world")
+    print("----")
+}
+imprimir()
+
+
+var pruebaConParametros: (String, String) -> String = { (nombre: String, apellidos: String)-> String in
+    return "Nombre completo: \(nombre) \(apellidos)"
+}
+print(pruebaConParametros("Antonio", "Cantos"))
+
+//abreviamos lo anterior
+var pruebaConParametrosAbreviado: (String, String) -> String = {
+    return "Nombre completo: \($0) \($1)" // si no tenemos nombre de parametros lo llamamos por la posición
+}
+print(pruebaConParametros("Antonio", "Cantos"))
+
+
+var numeros = [1, 2, 3, 4, 5]
+numeros.sorted { numero1, numero2 in
+    numero1 > numero2
+}

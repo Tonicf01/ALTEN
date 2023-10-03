@@ -7,5 +7,7 @@
         <page name='condicionales'/>
         <page name='tipos de datos'/>
         <page name='Funciones'/>
+        <page name='alias'/>
+        <page name='Extras'/>
     </pages>
 </playground>
