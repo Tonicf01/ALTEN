@@ -15,7 +15,7 @@ protocol DesarroladorAndroid {
     func leerCodigo()
 }
 
-class Persona: DesarroladoriOS, DesarroladorAndroid{
+class Persona: DesarroladoriOS, DesarroladorAndroid {
     func analizarRequisitos() {
         
     }
@@ -50,4 +50,27 @@ var desarrolladores2: [DesarroladoriOS & DesarroladorAndroid] = [Persona(), Pers
 desarrolladores2.forEach {
     $0.picarCodigoSwift()
     $0.picarCodigoKotlin()
+}
+
+//-----------------------------------------------------
+
+protocol Mago {
+    func lanzarHechizo()
+        
+}
+
+protocol MagoSupremo: Mago {//este protocolo hereda del anterior
+    func lanzarHechizoSupremo()
+}
+
+class Chaman: MagoSupremo {//esta clase hereda tanto de un protocolo como del otro
+    func lanzarHechizoSupremo() {
+        
+    }
+    
+    func lanzarHechizo() {
+        
+    }
+    
+    
 }
