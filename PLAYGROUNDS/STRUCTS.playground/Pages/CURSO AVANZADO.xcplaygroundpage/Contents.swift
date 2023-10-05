@@ -6,7 +6,7 @@ import Foundation
 struct Persona {//una clase necesitaria inicializador, en cambio el estruct los hace por defecto
     var nombre: String
     var apellidos: String
-
+    
     
     init(nombre: String, apellidos: String) {
         self.nombre = nombre
@@ -72,18 +72,19 @@ let agrupacion = Agrupacion()
 print(agrupacion.persona.nombre)
 agrupacion.persona.nombre = "María"
 //agrupacion.persona = PersonaClass(nombre: "", apellidos: "")  <- Esto no está permitido
-print(agrupacion.persona.nombre)
+print(agrupacion.persona.nombre)//esto se permite porque el cambio porque no aplicamos cambio a la constante y no intentamos cambiar la referencia de la clase.
 
+//--------------------------------------------------------
 
-
-import SwiftUI
+import SwiftUI//las vistas en swiftui son struct
 
 struct ListView: View {
-    var nombre: Dato<String> = Dato(dato: "")
+    var nombre: Dato<String> = Dato(dato: "")//forma de trabajar con swiftui
     
-    //Son lo mismo
+    //Son lo mismo tanto nombre2 como 3 ...@State nos permite acortar
     @State var nombre2: String = ""
     var nombre3: State<String> = State(initialValue: "")
+    
     //============
     
     func mostrarNombre() {
