@@ -7,11 +7,12 @@ import Foundation
 class Persona {
     var nombre: String
     var apellidos: String
-    var dni: String = ""
+    var dni: String?
     
-    init(nombre: String, apellidos: String) {//inicializador designated
+    init(nombre: String, apellidos: String, dni: String = "Cantos") {//inicializador designated
         self.nombre = nombre
         self.apellidos = apellidos
+        self.dni = dni
     }
     
 //    init() {//inicializador sin parametros
@@ -21,12 +22,24 @@ class Persona {
     
     convenience init() {//inicializador de conveniencia
         self.init(nombre: "", apellidos: "")
-        self.dni = "vacio"
+//        self.dni = "vacio"
     }
     func caminar() {
         print("el geuerrero camina")
     }
 }
+
+var persona1 = Persona(nombre: "Antonio", apellidos: "Cantos")
+var dni: String
+if let persona1Dni = persona1.dni {
+    dni = persona1Dni
+}
+var array = [Persona(), Persona()]
+array.forEach {
+    $0.apellidos
+}
+
+print(persona1)
 //hay que tener uno designado y varios de conveniencia
 
 class Guerrero: Persona {
