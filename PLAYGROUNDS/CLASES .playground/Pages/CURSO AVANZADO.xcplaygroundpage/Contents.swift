@@ -23,6 +23,9 @@ class Persona {
         self.init(nombre: "", apellidos: "")
         self.dni = "vacio"
     }
+    func caminar() {
+        print("el geuerrero camina")
+    }
 }
 //hay que tener uno designado y varios de conveniencia
 
@@ -37,11 +40,21 @@ class Guerrero: Persona {
         self.init(hp: hp, nombre: "", apellidos: "")
     }
     
-    required init(nombre: String, apellidos: String) {
+    required override init(nombre: String, apellidos: String) {
         self.hp = 50
         super.init(nombre: "", apellidos: "")
+    }
+    override func caminar() {//podemos sobreescribir una funcion con el metodo override
+        print("el guerrero camina")
     }
 }
 
 
 var guerrero1 = Guerrero(hp: 100)
+
+
+//-----------------------------------------------------
+//las clases permiten comparar la identidad con el === 3 iguales o si son diferentes con ! = = !==
+
+//class func: nos permite la sobreescritura con override
+//final class: es inamovible e impide que se pueda extender por herencia. Hay que usarlo siempre que se pueda
