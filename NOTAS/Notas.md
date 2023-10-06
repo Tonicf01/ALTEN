@@ -141,3 +141,9 @@ JSON: Una serie de reglas para que los datos vengan con una estructura por siste
 DATA: generalmente utilizado para la transferencia de datos
 --------------------------------------------------------
 CLOUSURE: al hacer intro en la sugerencia del sistema te hace la estructura
+        Tipo de dato que es una funcion
+        Son funciones anónimas
+-------------------------------------------------------
+SWIFT: es un lenguaje funcional, lenguaje que permite usar las funciones como tipos de datos (clousures)
+------------------------------------------------------
+
