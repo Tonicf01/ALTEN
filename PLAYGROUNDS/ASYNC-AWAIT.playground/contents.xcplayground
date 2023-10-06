@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='5.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
-    <timeline fileName='timeline.xctimeline'/>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='CURSO'/>
+        <page name='CURSO AVANZADO REPASO'/>
+        <page name='CURSO A. ASYNC-LET'/>
+        <page name='CURSO A. CANCELACION'/>
+        <page name='CURSO A. FOR-AWAIT-IN'/>
+        <page name='CURSO A. TASKGROUP'/>
+        <page name='CURSO A. ASYNCSEQUENCES'/>
+        <page name='CURSO A. ACTOR'/>
+        <page name='CURSO A. ASYNCSTREAM'/>
+        <page name='CURSO A. CONTINUATION'/>
+    </pages>
 </playground>

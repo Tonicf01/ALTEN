@@ -133,3 +133,11 @@ JSON: Una serie de reglas para que los datos vengan con una estructura por siste
       [] arrays
       {} objetos
       Datos de tipo simple
+      
+      Para descargar un JSON :
+       let url = URL(string://partimos de un array de imagenes "https://raw.githubusercontent.com/SDOSLabs/JSON-Sample/master/Products/images_test.json")!
+        let (data, _) = try await URLSession.shared.data(from: url)//para descargarlo
+--------------------------------------------------------
+DATA: generalmente utilizado para la transferencia de datos
+--------------------------------------------------------
+CLOUSURE: al hacer intro en la sugerencia del sistema te hace la estructura
