@@ -149,3 +149,23 @@ SWIFT: es un lenguaje funcional, lenguaje que permite usar las funciones como ti
 CREAR UN PROYECTO REAL:
  - TARJET: Es nuestra aplicacion(dentro del menu principal en el simbolito azul), puede ser de tipo app, framework, juego....
  - PROJECT / INFO: Encontramos las configuraciones DEBUG, PREPRODUCCION, PRODUCCION
+ ------------------------------------------------------------------
+ CLEAN ARQUITECTURE: 
+ 1. Siempre misma arquitectura se haga lo que se haga.
+ 2. Debe ser testeable (organizado en capas) para casos de uso, test, corregir errores.
+ 3. Da igual de donde vengan los datos que tiene que funcionar igualmente.
+ 
+ SOLID:
+ 1. Que sea legible y limpio el código
+ 2. Una clase solo debe tener una funcionalidad (ejempl: la funcionalidad por un lado y un imprimir consola en otra clase totalmente distinta)
+ 3. Una clase puede ser modificada por extensión pero no es la misma clase en si
+ 4. Mejor tenero muchos interfaces o protocolos a uno con mucha información
+ 
+ ARQUITECTURA:
+ 1. Vista: pinta lo que se le envia (lo estetico)
+ 2. Vista modelo: intermediario donde la vista pregunta que tiene que mostrar. Trabaja con OB
+ 3. Casos de uso: calculos y lógica necesaria. Trabaja con OB
+ 4. Interactor: es un cúmulo de casos de uso, más de una funcionalidad (ejempl: un CRUD con GET, DELETE, POST, PUT..)
+ 5. Repository: llama a api pidiendo la info necesaria. OBJECTDTO:primer objeto donde tenemos info, suele ser igual que JSON. OBJECT BO: objeto que tiene la info ya limpia. VO: parametros que vienen del BO, o varios BO para pintarlos.
+ 
+
