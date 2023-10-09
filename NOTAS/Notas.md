@@ -146,4 +146,6 @@ CLOUSURE: al hacer intro en la sugerencia del sistema te hace la estructura
 -------------------------------------------------------
 SWIFT: es un lenguaje funcional, lenguaje que permite usar las funciones como tipos de datos (clousures)
 ------------------------------------------------------
-
+CREAR UN PROYECTO REAL:
+ - TARJET: Es nuestra aplicacion(dentro del menu principal en el simbolito azul), puede ser de tipo app, framework, juego....
+ - PROJECT / INFO: Encontramos las configuraciones DEBUG, PREPRODUCCION, PRODUCCION
