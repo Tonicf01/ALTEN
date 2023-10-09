@@ -167,5 +167,8 @@ CREAR UN PROYECTO REAL:
  3. Casos de uso: calculos y lógica necesaria. Trabaja con OB
  4. Interactor: es un cúmulo de casos de uso, más de una funcionalidad (ejempl: un CRUD con GET, DELETE, POST, PUT..)
  5. Repository: llama a api pidiendo la info necesaria. OBJECTDTO:primer objeto donde tenemos info, suele ser igual que JSON. OBJECT BO: objeto que tiene la info ya limpia. VO: parametros que vienen del BO, o varios BO para pintarlos.
- 
+ -------------------------------------------------------
+ DEPURACION: 
+ - Debajo a la izquierda en el + tenemos el swift error breakpoint y el exception breakpoint: nos ayudan a detectar problemas en la ejecucion del programa si falla. INTENTAR ACTIVARLOS ANTES DE TRABAJAR.
+ - En la etiqueta de la consola podemos desactivar temporalmente todos los puntos de ruptura para hacer una prueba sin tener que hacerlo uno a uno.
 
