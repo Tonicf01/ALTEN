@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PruebaViewController" customModule="PruebaUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITULO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfh-n7-brG">
+                    <rect key="frame" x="20" y="79" width="353" height="67"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkg-Pf-Wwp">
+                    <rect key="frame" x="0.0" y="777.66666666666663" width="393" height="74.333333333333371"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola Mundo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yet-wd-cvm">
+                            <rect key="frame" x="10" y="9.9999999999999982" width="373" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="6ir-mk-mvR"/>
+                    <keyboardLayoutGuide key="keyboard" id="JAc-FK-ORL"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Yet-wd-cvm" firstAttribute="leading" secondItem="6ir-mk-mvR" secondAttribute="leading" constant="10" id="AR9-4j-zcT"/>
+                        <constraint firstItem="6ir-mk-mvR" firstAttribute="bottom" secondItem="Yet-wd-cvm" secondAttribute="bottom" constant="10" id="IqX-lv-Slz"/>
+                        <constraint firstAttribute="trailing" secondItem="Yet-wd-cvm" secondAttribute="trailing" constant="10" id="O0L-vk-3j2"/>
+                        <constraint firstItem="Yet-wd-cvm" firstAttribute="top" secondItem="vkg-Pf-Wwp" secondAttribute="top" constant="10" id="eWS-d9-arl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" id="wFP-Eg-QDM">
+                    <rect key="frame" x="71" y="156" width="251" height="228"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <viewLayoutGuide key="safeArea" id="gIV-Uw-BEm"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemMintColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qfh-n7-brG" secondAttribute="trailing" constant="20" id="Hf5-hX-LhF"/>
+                <constraint firstItem="qfh-n7-brG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="KFx-Xh-4DN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qfh-n7-brG" secondAttribute="bottom" constant="20" id="QQ8-2R-9TF"/>
+                <constraint firstAttribute="trailing" secondItem="vkg-Pf-Wwp" secondAttribute="trailing" id="VJE-ao-Ob1"/>
+                <constraint firstItem="vkg-Pf-Wwp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XIV-WF-r7P"/>
+                <constraint firstAttribute="bottom" secondItem="vkg-Pf-Wwp" secondAttribute="bottom" id="dJK-lu-p4S"/>
+                <constraint firstItem="qfh-n7-brG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="f17-XK-tPI"/>
+                <constraint firstItem="wFP-Eg-QDM" firstAttribute="top" secondItem="qfh-n7-brG" secondAttribute="bottom" constant="10" id="iDJ-pL-7Pu"/>
+                <constraint firstItem="vkg-Pf-Wwp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-162" id="w1V-7J-sCg"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="w1V-7J-sCg"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="46.564885496183201" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -26,7 +26,7 @@ Task {//Descarga las 3 imagenes a la vez
     async let (data2, _) = try URLSession.shared.data(from: image2)
     async let (data3, _) = try URLSession.shared.data(from: image3)
     
-    try await [data1, data2, data3].forEach{//hacemos un array con las imagenes y lo recorremos
+    try await [data1, data2, data3].forEach {//hacemos un array con las imagenes y lo recorremos
         if let img = UIImage(data: $0) {
             print(img)
             img

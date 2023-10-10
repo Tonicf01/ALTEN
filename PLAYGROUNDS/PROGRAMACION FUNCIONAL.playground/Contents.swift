@@ -6,8 +6,8 @@ var closure: (String) -> Void
 // forEach
 do {
     let items = [1, 5, 3, 11, 87]
-    items.forEach {
-        print($0)
+    items.forEach { numero in
+        print(numero)
     }
 }
 
@@ -57,7 +57,7 @@ print("========")
 
 // reduce ayuda a reducir todos los elementos en uno solo
 do {
-    let items = [1, 5, 3, 11, 87]
+    let items: [Int] = [1, 5, 3, 11, 87]
 //    let result = items.reduce(0) {
 //        $0 + $1
 //    }

@@ -4,8 +4,13 @@ import Foundation
 import UIKit
 
 func saludar() async {
-    try? await Task.sleep(nanoseconds: 3_000_000_000)
-    print("Hello world")
+    do {
+        try await Task.sleep(nanoseconds: 3_000_000_000)
+        print("Hello world")
+    } catch {
+        print("Ha habido un error")
+    }
+        
 }
 
 func saludar2() {
