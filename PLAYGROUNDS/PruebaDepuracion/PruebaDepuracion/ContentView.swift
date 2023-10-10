@@ -15,13 +15,13 @@ struct ContentView: View {
     var apellidos: String = "Cantos"
     var items = [1, 2, 3]
     var prueba = Prueba()
-    
+    var hola = "Hello World"
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text(hola)
             Button("Pulsa") {
                 print("Botón pulsado")
                 print("Muy Bien")

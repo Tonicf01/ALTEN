@@ -181,3 +181,5 @@ CREAR UN PROYECTO REAL:
  5 Dejar en blanco de tarjets main interface
  
  FIJAR ALGO EN INTERFAZ: trailing(derecha), leading(izquierda)
+
+IMPORTANTE CONSEJO: Crear nueva vista la pongo debajo de la principal, a la principal se le desactiva Safe Area Layout Guide y se le activan a la nueva y todo lo demas se construye dentro de la nueva, con margenes 0 a todos los lados y se le cambia el color a transparente

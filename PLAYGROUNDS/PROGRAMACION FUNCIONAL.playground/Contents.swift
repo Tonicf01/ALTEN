@@ -1,5 +1,5 @@
 import UIKit
-//swift es un lenguaje funcional: lenguaje que permite usar las funciones como tipos de datos (clousures)
+//swift es un lenguaje funcional: lenguaje que permite usar las funciones como tipo de datos o parametros (clousures)
 
 var closure: (String) -> Void
 
