@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScrollViewController" customModule="PruebaUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollView" destination="zay-8s-hqw" id="uL2-Jo-tm6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Kh-t7-Cbe">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zay-8s-hqw">
+                            <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLG-0v-Osx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="994.33333333333337"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgX-Bm-PUN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="994.33333333333337"/>
+                                            <mutableString key="text">Lorem fistrum a wan sexuarl está la cosa muy malar. Fistro tiene musho peligro torpedo torpedo al ataquerl sexuarl te va a hasé pupitaa a peich. Pupita benemeritaar a wan ese hombree condemor está la cosa muy malar. Papaar papaar está la cosa muy malar a peich diodenoo amatomaa fistro. Papaar papaar torpedo me cago en tus muelas qué dise usteer quietooor te va a hasé pupitaa al ataquerl.
+
+Caballo blanco caballo negroorl ahorarr al ataquerl a peich quietooor pupita se calle ustée. No te digo trigo por no llamarte Rodrigor a wan hasta luego Lucas pecador llevame al sircoo al ataquerl ese que llega la caidita te voy a borrar el cerito ese hombree quietooor. Al ataquerl a gramenawer jarl diodenoo diodeno benemeritaar jarl te voy a borrar el cerito. Va usté muy cargadoo hasta luego Lucas me cago en tus muelas a peich jarl quietooor llevame al sircoo no te digo trigo por no llamarte Rodrigor amatomaa papaar papaar jarl. Papaar papaar caballo blanco caballo negroorl pecador se calle ustée diodeno se calle ustée qué dise usteer ese pedazo de qué dise usteer. Por la gloria de mi madre está la cosa muy malar a wan te voy a borrar el cerito. Papaar papaar jarl diodenoo pecador papaar papaar va usté muy cargadoo no puedor fistro. No te digo trigo por no llamarte Rodrigor pupita sexuarl a peich se calle ustée mamaar ahorarr mamaar. Quietooor pecador por la gloria de mi madre va usté muy cargadoo por la gloria de mi madre condemor amatomaa no puedor va usté muy cargadoo va usté muy cargadoo.
+
+Al ataquerl por la gloria de mi madre qué dise usteer a wan ahorarr diodenoo. Condemor pupita ese pedazo de hasta luego Lucas está la cosa muy malar. Ese que llega jarl ese hombree diodenoo benemeritaar amatomaa ese hombree jarl. Condemor a peich hasta luego Lucas benemeritaar no te digo trigo por no llamarte Rodrigor te voy a borrar el cerito pupita pecador mamaar mamaar mamaar. Tiene musho peligro no te digo trigo por no llamarte Rodrigor la caidita qué dise usteer se calle ustée a gramenawer me cago en tus muelas a wan. Caballo blanco caballo negroorl ahorarr hasta luego Lucas me cago en tus muelas.</mutableString>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="vgX-Bm-PUN" secondAttribute="trailing" id="1GZ-7F-eWA"/>
+                                        <constraint firstItem="vgX-Bm-PUN" firstAttribute="top" secondItem="nLG-0v-Osx" secondAttribute="top" id="UuP-b4-V5N"/>
+                                        <constraint firstItem="vgX-Bm-PUN" firstAttribute="leading" secondItem="nLG-0v-Osx" secondAttribute="leading" id="jCJ-hf-H9l"/>
+                                        <constraint firstAttribute="bottom" secondItem="vgX-Bm-PUN" secondAttribute="bottom" id="ztt-rG-SK0"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="nLG-0v-Osx" firstAttribute="width" secondItem="zay-8s-hqw" secondAttribute="width" id="6vc-7c-AWW"/>
+                                <constraint firstItem="nLG-0v-Osx" firstAttribute="leading" secondItem="zay-8s-hqw" secondAttribute="leading" id="7Wl-fj-xpW"/>
+                                <constraint firstAttribute="bottom" secondItem="nLG-0v-Osx" secondAttribute="bottom" id="FZT-sO-k7k"/>
+                                <constraint firstAttribute="trailing" secondItem="nLG-0v-Osx" secondAttribute="trailing" id="btv-R7-FH6"/>
+                                <constraint firstItem="nLG-0v-Osx" firstAttribute="top" secondItem="zay-8s-hqw" secondAttribute="top" id="vMY-CR-T44"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="F1X-Nu-WWr"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="zay-8s-hqw" firstAttribute="top" secondItem="F1X-Nu-WWr" secondAttribute="top" id="6FZ-oH-2xi"/>
+                        <constraint firstItem="F1X-Nu-WWr" firstAttribute="trailing" secondItem="zay-8s-hqw" secondAttribute="trailing" id="Fed-ce-XO0"/>
+                        <constraint firstItem="F1X-Nu-WWr" firstAttribute="bottom" secondItem="zay-8s-hqw" secondAttribute="bottom" id="u1O-0k-Mrr"/>
+                        <constraint firstItem="zay-8s-hqw" firstAttribute="leading" secondItem="F1X-Nu-WWr" secondAttribute="leading" id="zY3-2x-atG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9Kh-t7-Cbe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="02w-wW-DhO"/>
+                <constraint firstAttribute="trailing" secondItem="9Kh-t7-Cbe" secondAttribute="trailing" id="OLS-SV-a7w"/>
+                <constraint firstAttribute="bottom" secondItem="9Kh-t7-Cbe" secondAttribute="bottom" id="SM0-ti-0c2"/>
+                <constraint firstItem="9Kh-t7-Cbe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pZ4-kp-hBU"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

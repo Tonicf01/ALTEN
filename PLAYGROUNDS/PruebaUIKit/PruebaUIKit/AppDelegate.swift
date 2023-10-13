@@ -2,14 +2,13 @@
 //  AppDelegate.swift
 //  PruebaUIKit
 //
-//  Created by antonio.cantos on 9/10/23.
+//  Created by Rafael FERNANDEZ on 20/7/22.
 //
 
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -30,7 +29,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        print(#function)
+    }
 
+    func applicationWillResignActive(_ application: UIApplication) {
+        print(#function)
+    }
+
+//    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+//        print(#function)
+//        return .portrait
+//    }
 
 }
 

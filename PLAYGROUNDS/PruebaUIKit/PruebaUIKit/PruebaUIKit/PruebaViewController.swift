@@ -2,13 +2,21 @@
 //  PruebaViewController.swift
 //  PruebaUIKit
 //
-//  Created by antonio.cantos on 9/10/23.
+//  Created by Rafael FERNANDEZ on 20/7/22.
 //
 
 import UIKit
 
 class PruebaViewController: UIViewController {
-
+    
+//    init() {
+//        super.init(nibName: "Prueba2", bundle: nil)
+//    }
+//    
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

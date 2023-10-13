@@ -171,15 +171,6 @@ CREAR UN PROYECTO REAL:
  DEPURACION: 
  - Debajo a la izquierda en el + tenemos el swift error breakpoint y el exception breakpoint: nos ayudan a detectar problemas en la ejecucion del programa si falla. INTENTAR ACTIVARLOS ANTES DE TRABAJAR.
  - En la etiqueta de la consola podemos desactivar temporalmente todos los puntos de ruptura para hacer una prueba sin tener que hacerlo uno a uno.
+ - Con po podemos hacer busquedas en la consola
  --------------------------------------------------------------------
- UIKIT: Framework para la creación de aplicaciones moviles
- CREACION DE NUEVO PROYECTO:
- 1 Eliminamos ViewController y Main.storyboard
- 2 Creamos nueva pantalla -> cocoa touch class -> class: nombre, subclass: UIViewController, marcamos crear el XIB
- 3 Importante que tenga el tarjet
- 4 En info.plist expandir todo y eliminar storyboard Name y guardar 
- 5 Dejar en blanco de tarjets main interface
  
- FIJAR ALGO EN INTERFAZ: trailing(derecha), leading(izquierda)
-
-IMPORTANTE CONSEJO: Crear nueva vista la pongo debajo de la principal, a la principal se le desactiva Safe Area Layout Guide y se le activan a la nueva y todo lo demas se construye dentro de la nueva, con margenes 0 a todos los lados y se le cambia el color a transparente

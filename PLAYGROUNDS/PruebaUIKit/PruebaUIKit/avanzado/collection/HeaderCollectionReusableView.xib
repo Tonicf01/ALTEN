@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="HeaderCollectionReusableView" customModule="PruebaUIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="143"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMi-YE-x1I">
+                    <rect key="frame" x="10" y="54" width="323" height="79"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="XMi-YE-x1I" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" constant="10" id="FSc-eP-tO3"/>
+                <constraint firstItem="XMi-YE-x1I" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="10" id="SgS-3O-iCb"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="XMi-YE-x1I" secondAttribute="trailing" constant="10" id="fnC-8D-Rg0"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="XMi-YE-x1I" secondAttribute="bottom" constant="10" id="x7N-Oo-iTe"/>
+            </constraints>
+            <connections>
+                <outlet property="lbTitle" destination="XMi-YE-x1I" id="ZqV-hE-7RY"/>
+            </connections>
+            <point key="canvasLocation" x="288" y="128"/>
+        </collectionReusableView>
+    </objects>
+</document>

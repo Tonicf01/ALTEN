@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailPresentViewController" customModule="PruebaUIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ke5-Mf-svs">
+                    <rect key="frame" x="174.5" y="437.5" width="65" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Volver"/>
+                    <connections>
+                        <action selector="actionDismiss:" destination="-1" eventType="touchUpInside" id="Z2p-eS-vfc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk7-sn-Yp2">
+                    <rect key="frame" x="159.5" y="386.5" width="95" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Ir al detalle"/>
+                    <connections>
+                        <action selector="actionPresent:" destination="-1" eventType="touchUpInside" id="5Mi-uz-4rH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Kt-wC-XZH">
+                    <rect key="frame" x="137.5" y="488.5" width="139" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Volver al principio"/>
+                    <connections>
+                        <action selector="actionDismissToFirst:" destination="-1" eventType="touchUpInside" id="zcF-xC-F8D"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2d-mz-CC4">
+                    <rect key="frame" x="168.5" y="335.5" width="77" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Guardar"/>
+                    <connections>
+                        <action selector="actionSave:" destination="-1" eventType="touchUpInside" id="tT0-XZ-nOf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4Kt-wC-XZH" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="3QI-dS-rdA"/>
+                <constraint firstItem="Ke5-Mf-svs" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Abj-Os-Q84"/>
+                <constraint firstItem="4Kt-wC-XZH" firstAttribute="top" secondItem="Ke5-Mf-svs" secondAttribute="bottom" constant="20" id="DjU-hq-LfJ"/>
+                <constraint firstItem="Fk7-sn-Yp2" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="S6h-dz-Gxn"/>
+                <constraint firstItem="J2d-mz-CC4" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="YcJ-0B-X2w"/>
+                <constraint firstItem="Ke5-Mf-svs" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="rhP-U8-rZb"/>
+                <constraint firstItem="Fk7-sn-Yp2" firstAttribute="top" secondItem="J2d-mz-CC4" secondAttribute="bottom" constant="20" id="t8i-R4-lHy"/>
+                <constraint firstItem="Ke5-Mf-svs" firstAttribute="top" secondItem="Fk7-sn-Yp2" secondAttribute="bottom" constant="20" id="uhw-jg-zIh"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="118"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
