@@ -23,9 +23,9 @@ class ScrollViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Le damos medidas a margenes del contenido dentro del scroll
         scrollView.contentInset = UIEdgeInsets(top: 40, left: 0, bottom: 100, right: 0)
-        scrollView.delegate = self
+        scrollView.delegate = self//para ver informacion
         
     }
     
@@ -41,11 +41,11 @@ class ScrollViewController: UIViewController {
 
 extension ScrollViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print("\(#function) - \(scrollView.contentOffset)")
+        print("\(#function) - \(scrollView.contentOffset)")//para ver informacion en consola
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        print(#function)
+        print(#function)//para ver informacion cuando se para el scroll
     }
 }
 

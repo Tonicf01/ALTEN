@@ -37,5 +37,5 @@ class CustomComponentsViewController: UIViewController {
         stackView.addArrangedSubview(cView)
         
     }
-
+//prueba
 }

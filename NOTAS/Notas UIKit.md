@@ -10,7 +10,7 @@
  
 -------------------------------------------------------------------------------------------------------------
 
-1. **AppDelegate:**
+1. **AppDelegate:** Es donde indicamos cual es la pantalla principal en la que estamos trabajando
 
    El `AppDelegate` es una clase que actúa como el punto de entrada principal de tu aplicación. Se encarga de gestionar eventos y acciones globales de la aplicación. Algunas de sus responsabilidades clave incluyen:
 
@@ -46,7 +46,7 @@
 * Outlets Delegate: se interactua con un componente(acceder a las noticias) Hay que marcarlos en la interface
 * Outlets dataSource: cargar datos(cargar noticias en una table por ejemplo)
 * Para añadir el outlet arratramos desde la interfaz al código como se muestra en los videos
-* Poner toda la pantalla en scroll view: 
+* En setup() añadimos la configuracion y caracteristicas del componente
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -138,3 +138,42 @@ pageControl...(nombre)
     - Importante que tenga la pestaña de interacción de usuario activada, sino no va a funcionar!!!
     - Importante que llamemos a las funciones en el viewDidLoad() debajo de la clase
     - Podemos darle el número de páginas, y la pagina actual
+
+-------------------------------------------------------------------------------------------------------------
+
+
+COMPONENTES AVANZADOS(interactuar con el usuario y responda a un evento): 
+
+14: SCROLL VIEW: Para el deslizamiento de la pantalla ya que no lo trae de serie. Todo lo que pongamos dentro del scrollView se mueve en caso de lo que tengamos dentro (label..)no quepa dentro.
+    - Content Size (tamaño del contenido)
+    - Frame (el tamaño de la ventana de scroll)
+    - Hay que indicar muy bien los constrain
+15: TABBAR: Componente que nos permite tener en la parte inferior pestañas con todas las pantallas
+
+16: PAGEVIEW: Añadimos un viewControllerdentro de otro pasar paginas arrastrando
+
+17: TABLAS: Comoponente que añade celdas 
+tableView..(nombre)
+    - Recomendado añadir un enumerador con los tipos de elementos a introducir.
+    - Tenemos un array de elementos
+    - Antes de pintar nada importantisimo registrar celdas.
+                registerCell()
+    - Declaramos el delegate y el dataSource
+        tableViewCustom.delegate = self
+        tableViewCustom.dataSource = self
+        
+    - Método con numero de secciones
+    - metodo con numero de elementos en la seción
+    - La vista que nos va a mostrar al entrar en el bucle
+
+18: COLLECTION: Igual que las celdas pero con más posibilidades de tamaños y formas.
+    - Página cocoa controls: componentes y layouts visuales para reutilizarlos
+    - Página Awesome ios: directorio de librerias de interes
+
+19: MAPS: para añadir mapas 
+customMap
+    - Tenemos que importar mapKit
+
+20: ALERTS: Mostrar alertas en la pantalla
+    - la unica diferencia entre actionSheet y alert es la forma en la que se muestra en pantalla
+

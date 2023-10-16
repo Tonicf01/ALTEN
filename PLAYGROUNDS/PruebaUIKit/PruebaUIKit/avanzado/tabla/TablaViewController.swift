@@ -8,7 +8,7 @@
 import UIKit
 
 extension TablaViewController {
-    enum Element {
+    enum Element {//creamos enumerador para darle los dos tipos de elementos
         case data(String)
         case ad(String)
     }
@@ -47,7 +47,7 @@ class TablaViewController: UIViewController {
     }
 
     func setup() {
-        registerCell()
+        registerCell()//primero tenemos que registrar la celda. Decirle a la tabla las celdas que puede pintar
         
         tableViewCustom.delegate = self
         tableViewCustom.dataSource = self
@@ -69,9 +69,9 @@ extension TablaViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
         switch items[indexPath.row] {
         case .data:
-            return 40
+            return 40//tamaño altura datos
         case .ad:
-            return 100
+            return 100//tamaño altura anuncios
         }
     }
     

@@ -17,7 +17,7 @@ class TabBarViewController: UITabBarController {
         setup()
     }
     
-    func setup() {
+    func setup() {//añadimos todas las pantallas a mostrar
         self.delegate = delegado
         
         self.viewControllers = [UINavigationController(rootViewController: ListNavigationViewController()),
@@ -58,12 +58,12 @@ class TabBarViewController: UITabBarController {
         }
     }
     
-    func loadStyle() {
-        let appearance = UITabBarAppearance()
+    func loadStyle() {//le damos los estilos
+        let appearance = UITabBarAppearance()//objeto de la apariencia
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = .white
         self.tabBar.standardAppearance = appearance
-        if #available(iOS 15.0, *) {
+        if #available(iOS 15.0, *) {//le indicamos que solo a partir de una version
             self.tabBar.scrollEdgeAppearance = appearance
         }
     }
@@ -76,6 +76,7 @@ class TabBarViewController: UITabBarController {
 //    }
 //}
 
+//clase que nos permite imprimir
 class ImplementaDelegatoTabBar: NSObject, UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         print(String(describing: type(of: viewController)))

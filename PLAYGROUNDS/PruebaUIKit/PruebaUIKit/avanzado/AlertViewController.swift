@@ -30,7 +30,7 @@ class AlertViewController: UIViewController {
         
         alert.addAction(UIAlertAction(title: "Muy bien", style: .default, handler: { action in
             print("Pulsado botón \"Muy bien\"")
-        }))
+        }))//añadimos acciones
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in
             print("Pulsado botón \"Cancel\"")
