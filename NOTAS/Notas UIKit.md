@@ -30,7 +30,66 @@
 
    -------------------------------------------------------------------------------------------------------------
 
+* Delegate:
+
+El patrón delegate se utiliza para permitir que un objeto proporcione información y responda a eventos o acciones en nombre de otro objeto.
+El objeto que actúa como delegado implementa un protocolo específico (por ejemplo, UIPickerViewDelegate, UITableViewDelegate) que define los métodos que el objeto delegado debe implementar para manejar eventos y proporcionar información.
+Ejemplos de uso incluyen responder a selecciones de elementos en una tabla o lista, gestionar eventos de teclado, o recibir notificaciones de ciclo de vida de una vista.
+El objeto delegado se establece generalmente a través de la propiedad delegate del objeto que necesita delegar su funcionalidad.
+
+* DataSource:
+
+El patrón dataSource se utiliza para proporcionar datos a un componente de interfaz de usuario, como una tabla (UITableView) o una colección (UICollectionView).
+El objeto que actúa como fuente de datos implementa un protocolo específico (por ejemplo, UITableViewDataSource) que define los métodos para proporcionar datos, como el número de filas, celdas individuales y secciones.
+Los métodos del dataSource se utilizan para personalizar la apariencia y el contenido de los componentes de la interfaz de usuario, como la representación de celdas en una tabla o elementos en una colección.
+El objeto fuente de datos se establece generalmente a través de la propiedad dataSource del componente de interfaz de usuario.
+
+En resumen, delegate se utiliza para gestionar eventos y acciones, mientras que dataSource se utiliza para proporcionar datos y personalizar la apariencia de los componentes de interfaz de usuario. Ambos patrones son esenciales para la programación de aplicaciones iOS y permiten una separación eficiente de responsabilidades, lo que conduce a un código más limpio y mantenible.
+
+----------------------------------------------------------------------------------------------------------------
    
+   CICLO DE VIDA DE UIKit:
+   
+1. View Controller Creado: Cuando se muestra una pantalla en la aplicación, se crea un View Controller. Este es el controlador de esa vista.
+INIT
+
+2. View Did Load: Después de que el View Controller se crea, se llama al método viewDidLoad(). Aquí puedes configurar la interfaz de usuario y realizar tareas de inicialización.
+
+3. View Will Appear: Antes de que la vista sea visible en la pantalla, se llama a viewWillAppear(_:). Aquí puedes realizar tareas que deben ocurrir antes de que la vista aparezca, como animaciones previas.
+
+4. View Did Appear: Cuando la vista es completamente visible en la pantalla, se llama a viewDidAppear(_:). Aquí puedes realizar acciones que deben ocurrir después de que la vista se muestre.
+
+5. Interacción del Usuario: Los usuarios interactúan con la vista a través de gestos, toques y entradas. Esto puede incluir tocar botones, deslizar, escribir texto, etc.
+
+6. View Will Disappear: Antes de que la vista desaparezca, se llama a viewWillDisappear(_:). Aquí puedes realizar tareas antes de que la vista se oculte, como guardar datos o detener animaciones.
+
+7. View Did Disappear: Después de que la vista desaparece completamente de la pantalla, se llama a viewDidDisappear(_:). Puedes realizar tareas de limpieza aquí.
+
+8. View Controller Liberado: Si la vista ya no es necesaria, el View Controller puede ser liberado de la memoria para ahorrar recursos.
+
+9. deInit: liberar el espacio de la clase en caso de necesitarlo
+ 
+** prepareForReuse: limpia la celda para que no de fallos extraños
+
+En resumen, el ciclo de vida de UIKit se trata de la creación, configuración, aparición, interacción, desaparición y liberación de vistas y controladores en una aplicación iOS. Cada uno de estos eventos te permite realizar acciones específicas en momentos precisos durante la vida de una vista o pantalla en tu aplicación.
+   ----------------------------------------------------------------------------------------
+    LISTADO (List View o TableView):
+
+Un "listado" se refiere a una vista que muestra una lista de elementos, a menudo en una estructura de tabla (UITableView) en aplicaciones iOS.
+En una vista de listado, los elementos suelen mostrarse en una lista vertical, donde cada elemento de la lista es un "celda" que puede contener texto, imágenes u otros elementos.
+Los listados son comunes en situaciones donde se necesita mostrar una colección de elementos de manera eficiente, como listas de contactos, mensajes, productos, etc.
+Los elementos del listado son a menudo elementos seleccionables que pueden llevar a vistas de detalle cuando se tocan.
+
+    DETALLE (Detail View):
+
+Un "detalle" se refiere a una vista que muestra información más detallada o específica sobre un elemento seleccionado de un listado.
+En una vista de detalle, se muestra información más completa sobre un elemento en particular, como texto detallado, imágenes ampliadas u otros detalles relacionados con ese elemento.
+Los detalles son comunes en aplicaciones que muestran información detallada sobre elementos de un listado, como la vista de un contacto en una aplicación de contactos o la vista de un producto en una aplicación de compras en línea.
+Los detalles suelen mostrarse después de que un elemento del listado ha sido seleccionado o tocado.
+
+En resumen, la diferencia clave entre un listado y un detalle en UIKit es que un listado muestra una colección de elementos, generalmente en una lista, mientras que un detalle muestra información detallada sobre un elemento específico seleccionado de ese listado. Ambos tipos de vistas son fundamentales en el diseño de aplicaciones iOS, ya que permiten a los usuarios ver una visión general de la información y profundizar en detalles cuando sea necesario.
+   
+----------------------------------------------------------------------------------------------------------------   
  
 * FIJAR ALGO EN INTERFAZ: trailing(derecha), leading(izquierda)
 * Cada componente es una pantalla vacia. (tenemos que añairla a EsceneDelegate)
@@ -47,6 +106,8 @@
 * Outlets dataSource: cargar datos(cargar noticias en una table por ejemplo)
 * Para añadir el outlet arratramos desde la interfaz al código como se muestra en los videos
 * En setup() añadimos la configuracion y caracteristicas del componente
+* @IBOutlet: se usa para establecer conexiones entre elementos de la interfaz de usuario y propiedades en el código fuente, lo que te permite acceder y modificar esos elementos desde el código. Declara las variables
+* @IBAction se utiliza para crear métodos que se ejecutan en respuesta a eventos generados por elementos de la interfaz de usuario, lo que te permite definir la lógica que debe ocurrir cuando un usuario interactúa con la vista. 
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -176,4 +237,23 @@ customMap
 
 20: ALERTS: Mostrar alertas en la pantalla
     - la unica diferencia entre actionSheet y alert es la forma en la que se muestra en pantalla
+
+----------------------------------------------------------------------------------------------------------
+
+PRESENTACION Y NAVEGACION
+
+- UINavigationController:
+Este componente es una pila de navegación que nos permite navegar hacia adelante y atrás
+Push: para navegar hacia adelante y añadir la nueva pantalla a la pila de navegación
+Pop: para navegar hacia atrás y eliminar la pantalla de la pila de navegación
+
+- Modal:
+Este componente inicia un nuevo contexto de presentación de pantallas por encima de todo lo demás. Cuando se oculta, se sigue manteniendo el contexto que había anteriormente.
+Present: para mostrar la nueva pantalla sobre un nuevo contexto
+Dismiss: para ocultar el contexto en el que se encuentra la pantalla
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
 

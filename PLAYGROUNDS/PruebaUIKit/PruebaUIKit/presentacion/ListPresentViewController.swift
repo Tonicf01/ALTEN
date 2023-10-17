@@ -32,7 +32,7 @@ class ListPresentViewController: UIViewController {
             self?.reloadData()
         }
         detailViewController.modalTransitionStyle = .flipHorizontal
-        detailViewController.modalPresentationStyle = .fullScreen
+        detailViewController.modalPresentationStyle = .fullScreen//le damos el estilo de presentacion
         self.present(detailViewController, animated: true, completion: nil)
     }
     

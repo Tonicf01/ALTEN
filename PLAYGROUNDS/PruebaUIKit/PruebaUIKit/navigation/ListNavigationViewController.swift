@@ -52,11 +52,11 @@ class ListNavigationViewController: UIViewController {
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard error == nil else {
                 print("error")
-                return
+                return//controlando que haya un error y dar un aviso
             }
             guard let response = response as? HTTPURLResponse, 200..<300 ~= response.statusCode else {
                 print("response")
-                return
+                return//asegurate que el response es del tipo httpurlresponse y que el estatus code esta en ese rango
             }
             guard let data = data else {
                 print("data")
@@ -64,6 +64,7 @@ class ListNavigationViewController: UIViewController {
             }
             print(String(data: data, encoding: .utf8))
             
+            //FileManager se encarga de almacenar la url en un fichero
             guard let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last else {
                 print("FileManager")
                 return
@@ -79,7 +80,7 @@ class ListNavigationViewController: UIViewController {
             }
             
 
-        }.resume()
+        }.resume()//indispensable hacer la llamada para que traiga la url
     }
     
     @IBAction func actionNavigate(_ sender: Any) {
